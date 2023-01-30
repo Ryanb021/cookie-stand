@@ -1,3 +1,9 @@
 'use strict';
 
-console.log('Welcome to my headaches!');
+let seattle = {
+  name: 'Seattle',
+  minCust: 23,
+  maxCust: 65,
+  avgCookieBought: 6.3,
+  cookiesBought: [],
+};
