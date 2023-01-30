@@ -37,9 +37,11 @@ console.log(storeSeattle.numSales());
 console.log(storeSeattle.numberOfSales);
 console.log(storeSeattle.randomCustomers());
 console.log(` ${storeSeattle.averageSale()} is averageSale`);
-console.log(`total sales ${storeSeattle.saleTotal}`);
+//console.log(`total sales ${storeSeattle.saleTotal}`);
 
 let newDiv = document.getElementById('div');
+//located the div on html, so Store name can be listed under
+
 let seattleP = document.createElement('p');
 seattleP.textContent = storeSeattle.location;
 newDiv.appendChild(seattleP);
@@ -99,7 +101,7 @@ newDiv.appendChild(tokyoP);
 for (let k = 0; k < hours.length; k++) {
   let tokyoLi = document.createElement('li');
   tokyoLi.textContent = `${hours[k]}: ${storeTokyo.numberOfSales[k]} cookies`;
-  tokyoP.appendChild(seattleLi);
+  tokyoP.appendChild(tokyoLi);
 }
 
 let tokyoLiTotal = document.createElement('li');
@@ -150,7 +152,7 @@ newDiv.appendChild(dubaiP);
 
 for (let k = 0; k < hours.length; k++) {
   let dubaiLi = document.createElement('li');
-  seattleLi.textContent = `${hours[k]}: ${storeDubai.numberOfSales[k]} cookies`;
+  dubaiLi.textContent = `${hours[k]}: ${storeDubai.numberOfSales[k]} cookies`;
   dubaiP.appendChild(dubaiLi);
 }
 
