@@ -51,7 +51,7 @@ a {
 .nav-links li a:hover {
   color:blueviolet;
 }
-/*
+
 .hero-container {
   display: flex;
   flex-direction: row;
@@ -77,4 +77,25 @@ a {
   position: absolute;
   z-index: 0;
 }
-*/
+
+main {
+  margin-bottom: 50px;
+}
+
+.info-text {
+  line-height: 1.5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table {
+  display: block;
+  border-collapse: separate;
+  border: 2px solid red;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin: 30px auto;
+  overflow-y: scroll;
+  width: 960px;
+  height: 230px;
+  font-family: 'Times New Roman';
+}
