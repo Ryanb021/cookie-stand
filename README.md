@@ -14,4 +14,5 @@ Pat’s Salmon Cookies, soon with franchises internationally, needs a proof of c
 
 Because we are early in the life of this business, we will need to build an application that is adaptable. Pat will need to be able to add and remove locations from the daily projections report, and Pat will also need to be able to easily modify the input numbers for each location based on day of the week, special events, and other factors. Pat would like to see these numbers with nice formatting in a web application.
 
-![Lighthouse Cookie Stand](https://user-images.githubusercontent.com/120413183/215983607-49b08ba9-b942-4850-9ae1-c93c4105a226.png)
+![Lighthouse Cookie Stand](https://user-images.githubusercontent.com/120413183/215998591-44b84b68-9cce-4638-95dc-f2a017da03d2.png)
+
