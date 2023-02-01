@@ -29,7 +29,7 @@ Store.prototype.getSalesData = function () {
 
     let cookieSales = Math.round(customersPerHour * this.avgSold);
 
-    this.listOfSalesPerHour.push(cookieSales);
+    this.salesPerHour.push(cookieSales);
     this.dailySalesTotal += cookieSales;
   }
 };
@@ -43,10 +43,10 @@ Store.prototype.render = function () {
   dataCityName.innerText = this.cityName.toUpperCase();
   row.appendChild(dataCityName);
 
-  for (let i = 0; i < this.listOfSalesPerHour.length; i++) {
-    let dataSalesPerHour = document.createElement('td');
-    dataSalesPerHour.innerText = this.listOfSalesPerHour[i];
-    row.appendChild(dataSalesPerHour);
+  for (let i = 0; i < this.salesPerHour.length; i++) {
+    let dataSalesHourly = document.createElement('td');
+    dataSalesHourly.innerText = this.salesPerHour[i];
+    row.appendChild(dataSalesHourly);
   }
 
   let totalSales = document.createElement('td');
@@ -75,7 +75,7 @@ function renderTableFooter(storeLocationsArray) {
 
   let totalsLabelElement = document.createElement('th');
   row.appendChild(totalsLabelElement);
-  totalsLabelElement.innerHTML = 'TOTALS';
+  totalsLabelElement.innerHTML = 'TOTAL';
 
   let dailyTotal = 0;
   for (let i = 0; i < hours.length; i++) {
@@ -84,9 +84,9 @@ function renderTableFooter(storeLocationsArray) {
     row.appendChild(cell);
 
     for (let j = 0; j < storeLocationsArray.length; j++) {
-      hourlyTotal += storeLocationsArray[j].listOfCookieSalesPerHour[i];
+      hourlyTotal += storeLocationsArray[j].salesPerHour[i];
 
-      dailyTotal += storeLocationsArray[j].listOfCookieSalesPerHour[i];
+      dailyTotal += storeLocationsArray[j].salesPerHour[i];
     }
     cell.innerText = hourlyTotal;
   }
@@ -122,8 +122,8 @@ salesDataElement.addEventListener('submit', (e) => {
   let cityName = e.target.cityName.value;
   let minCust = e.target.minCust.value;
   let maxCust = e.target.maxCust.value;
-  let avgCookies = e.target.avgCookies.value;
-  new Store(cityName, minCust, maxCust, avgCookies);
+  let averageCookies = e.target.averageCookies.value;
+  new Store(cityName, minCust, maxCust, averageCookies);
   salesDataElement.reset();
 
   salesHeaderElement.innerHTML = '';
