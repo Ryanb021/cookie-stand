@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Sales</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>cookie-stand</title>
 </head>
 
 <body>
-  <h1>Store Sales</h1>
-  <div id="'div"></div>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+ 
+  </header>
+  <main>
+    <h1>Sales Data</h1>
+    <form id="sales-data-form" action="#" method="#">
+      <fieldset>
+        <legend>
+          <h3>City Sales Data</h3>
+        </legend>
+        <section>
+          <label for="cityName">City Name:</label>
+          <input id="cityName" type="text" name="inputCityName" placeholder="enter city name "/>
+        </section>
+        <section>
+          <label for="minPatrons">Min Patrons Per Hour:</label>
+          <input type="number" name="inputMinPatrons" id="minPatrons" placeholder="input minimun patrons per hour">
+        </section>
+        <section>
+          <label for="maxPatrons">Max Patrons Per Hour:</label>
+          <input type="number" name="inputMaxPatrons" id="maxPatrons" placeholder="input maximum patrons per hour">
+        </section>
+        <section>
+          <label for="avgCookiesSold">Average Cokies Sold:</label>
+          <input type="number" name="inputAvgCookiesSold" id="avgCookiesSold" placeholder="input average cookies sold" step="any">
+        </section>
+        <button type="submit"></button>Generate Sales Data</button>
+      </fieldset>
+    </form>
+    <table>
+      <thead id="sales-header">
+      </thead>
+
+      <tbody id="sales-body"></tbody>
+
+      <tfoot id="sales-footer"></tfoot>
+    </table>
+
+  </main>
+  <footer>
+    <p>&copy Ryan Bagan 2023</p>
+  </footer>
+
   <script src="js/app.js"></script>
+  
 </body>
 
 </html>
