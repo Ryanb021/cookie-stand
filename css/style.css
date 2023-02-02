@@ -171,6 +171,7 @@ fieldset button:hover {
   transform: translateY(-0.25em)
 }
 
+/*mobile tablet*/
 @media (min-width:300px) and (max-width: 750px) {
   .hero-img {
     z-index: 1;
@@ -190,16 +191,17 @@ fieldset button:hover {
   }
 }
 
+/*for laptop*/
 @media (min-width:750px) and (max-width:1020px) {
   .hero-img {
     z-index: 1;
     max-width: 500px;
-    max-height: 300px;
+    max-height: 200px;
   }
 
   .hero-img-bg {
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     top: 150px;
     border-radius: 50%;
     position: absolute;
@@ -214,6 +216,7 @@ fieldset button:hover {
   }
 }
 
+/*for desktop*/
 @media (min-width: 1020px) and (max-width: 1200px) {
   .hero-img {
     z-index: 1;
