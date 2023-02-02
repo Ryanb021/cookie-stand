@@ -1,5 +1,5 @@
 body {
-  background-color: aquamarine;
+  background-color: rgb(127, 140, 255);
   text-align: center;
 }
 
@@ -12,7 +12,9 @@ h1 {
 }
 
 h3 {
-  font-family: 'Times New Roman', sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  margin: 1rem auto;
 }
 
 p {
@@ -49,7 +51,7 @@ a {
 }
 
 .nav-links li a:hover {
-  color:blueviolet;
+  color:rgb(226, 43, 150);
 }
 
 .hero-container {
