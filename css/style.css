@@ -128,7 +128,7 @@ tr:nth-child(odd) td {
 }
 
 footer p {
-  font-size: .7rem;
+  font-size: 1rem;
 }
 
 footer i {
@@ -151,8 +151,9 @@ fieldset legend {
 }
 
 label {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   margin: 5px 10px;
+  font-size: 1.2rem;
 }
 
 fieldset input {
@@ -162,8 +163,8 @@ fieldset input {
 fieldset button {
   background-color: coral;
   border-radius: 5px;
-  padding: 5px;
-  margin: 30px;
+  padding: 10px;
+  margin: 3px;
   transition: 1s;
 }
 
