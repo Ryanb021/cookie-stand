@@ -99,3 +99,134 @@ table {
   height: 230px;
   font-family: 'Times New Roman';
 }
+
+td,
+th {
+  border: 1px, solid red;
+  padding: 10px 20px;
+
+}
+th {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: beige;
+}
+
+tr:nth-child(odd) td {
+  background-color: aquamarine;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 40px 400px;
+}
+
+footer p {
+  font-size: .7rem;
+}
+
+footer i {
+  transition: 1s;
+  margin-bottom: 30ox;
+}
+
+footer i:hover {
+  color:darkred;
+}
+
+fieldset {
+  border: 1px solid black;
+  text-align: center;
+  margin: 30 px;
+}
+
+fieldset legend {
+  margin-bottom: 30px;
+}
+
+label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 5px 10px;
+}
+
+fieldset input {
+  width: 100px;
+}
+
+fieldset button {
+  background-color: coral;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 30px;
+  transition: 1s;
+}
+
+fieldset button:hover {
+  background-color: cornsilk;
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+  transform: translateY(-0.25em)
+}
+
+@media (min-width:300px) and (max-width: 750px) {
+  .hero-img {
+    z-index: 1;
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  .hero-img-bg {
+    visibility: hidden;
+  }
+
+  .footer-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px auto;
+  }
+}
+
+@media (min-width:750px) and (max-width:1020px) {
+  .hero-img {
+    z-index: 1;
+    max-width: 500px;
+    max-height: 300px;
+  }
+
+  .hero-img-bg {
+    width: 300px;
+    height: 400px;
+    top: 150px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px auto;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1200px) {
+  .hero-img {
+    z-index: 1;
+    max-width: 500px;
+    max-height: 300px;
+  }
+
+  .hero-img-bg {
+    width: 300px;
+    height: 400px;
+    top: 150px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+  }
+}
