@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Sales</title>
+  <title>Sales Data</title>
 </head>
 
 <body>
@@ -18,10 +19,17 @@
         <li><a href="index.html">--Home--</a></li>
         <li><a href="#">--Locations--</a></li>
         <li><a href="#">--FAQ--</a></li>
-        <li><a href="sales.html">--Sales--</a></li>
+        <li><a href="sales.html">--Sales Data--</a></li>
       </ul>
     </nav>
- 
+    <section class="hero-container">
+      <img class="hero-img" alt="salmon"
+        src="https://raw.githubusercontent.com/codefellows/seattle-code-201d95/main/class-08/lab-b/assets/salmon.png">
+      <img class="hero-img-bg5" alt="family"
+        src="https://raw.githubusercontent.com/codefellows/seattle-code-201d95/main/class-08/lab-b/assets/family.jpg">
+      <img class="hero-img-bg6" alt="chinook"
+        src="https://raw.githubusercontent.com/codefellows/seattle-code-201d95/main/class-08/lab-b/assets/chinook.jpg">
+
   </header>
   <main>
     <h1>Sales Data Information</h1>
@@ -32,21 +40,22 @@
         </legend>
         <section>
           <label for="cityName">City Name:</label>
-          <input id="cityName" type="text" name="inputCityName" placeholder="enter city name "/>
+          <input id="cityName" type="text" name="inputCityName" placeholder="enter city name " />
         </section>
         <section>
-          <label for="minPatrons">Min Patrons Per Hour:</label>
-          <input type="number" name="inputMinPatrons" id="minPatrons" placeholder="input minimun patrons per hour">
+          <label for="minCust">Min Customers Per Hour:</label>
+          <input type="number" name="inputMinimumCustomers" id="minCust" placeholder="input minimun customers">
         </section>
         <section>
-          <label for="maxPatrons">Max Patrons Per Hour:</label>
-          <input type="number" name="inputMaxPatrons" id="maxPatrons" placeholder="input maximum patrons per hour">
+          <label for="maxCust">Max Customers Per Hour:</label>
+          <input type="number" name="inputMaximumCustomers" id="maxCust" placeholder="input maximum customers">
         </section>
         <section>
-          <label for="avgCookiesSold">Average Cookies Sold:</label>
-          <input type="number" name="inputAvgCookiesSold" id="avgCookiesSold" placeholder="input average cookies sold" step="any">
+          <label for="avgCookies">Average Cookies Sold:</label>
+          <input type="number" name="inputAvgCookiesSold" id="avgCookies" placeholder="input avg cookies"
+            step="any">
         </section>
-        <button type="submit"></button>Generate Sales Data</button>
+        <button type="submit"></button>Generate Data Results</button>
       </fieldset>
     </form>
     <table>
@@ -63,7 +72,7 @@
   </footer>
 
   <script src="js/app.js"></script>
-  
+
 </body>
 
 </html>
