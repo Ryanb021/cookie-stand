@@ -2,7 +2,6 @@
 
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
-
 //global variables//
 let storeLocations = [];
 const salesHeaderElement = document.getElementById('sales-table-header');
@@ -49,9 +48,9 @@ Store.prototype.render = function () {
     row.appendChild(dataSalesHourly);
   }
 
-  let totalSales = document.createElement('td');
-  totalSales.innerText = this.dailySalesTotal;
-  row.appendChild(totalSales);
+  let totalSalesData = document.createElement('td');
+  totalSalesData.innerText = this.dailySalesTotal;
+  row.appendChild(totalSalesData);
 
 };
 
@@ -75,7 +74,7 @@ function renderTableFooter(storeLocationsArray) {
 
   let totalsLabelElement = document.createElement('th');
   row.appendChild(totalsLabelElement);
-  totalsLabelElement.innerHTML = 'TOTAL';
+  totalsLabelElement.innerHTML = 'TOTALS';
 
   let dailyTotal = 0;
   for (let i = 0; i < hours.length; i++) {
@@ -126,7 +125,7 @@ salesDataElement.addEventListener('submit', (e) => {
   new Store(cityName, minCust, maxCust, averageCookies);
   salesDataElement.reset();
 
-  salesHeaderElement.innerHTML = '';
+  salesFooterElement.innerHTML = '';
 
   storeLocations[storeLocations.length - 1].getSalesData();
   storeLocations[storeLocations.length - 1].render();
