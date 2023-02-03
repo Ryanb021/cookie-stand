@@ -214,7 +214,7 @@ fieldset input {
 fieldset button {
   background-color: cornsilk;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 20px;
   margin: 3px;
   transition: 1s;
 }
