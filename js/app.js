@@ -118,7 +118,7 @@ function renderHours() {
 // Event listeners for form
 salesDataElement.addEventListener('submit', (e) => {
   e.preventDefault();
-  console.log('Love you');
+
   let cityName = e.target.cityName.value;
   let minCust = e.target.minCust.value;
   let maxCust = e.target.maxCust.value;
